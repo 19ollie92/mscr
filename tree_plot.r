@@ -1,6 +1,17 @@
-install.packages("MCMCtreeR")
-
+library(ggtree)
+library(ape)
 library(MCMCtreeR)
+library(tidyverse)
+
+
+
+tree <- read.nexus("")
+
+ggtree(tree) + 
+geom_text(aes(label=node),
+          hjust=-.005) + 
+  geom_tiplab()
+
 
 
 dated.tree <- MCMCtreeR::readMCMCtree("")

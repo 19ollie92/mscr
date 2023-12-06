@@ -3,7 +3,7 @@ install.packages("MCMCtreeR")
 library(MCMCtreeR)
 
 
-dated.tree <- MCMCtreeR::readMCMCtree("pf_178.tre")
+dated.tree <- MCMCtreeR::readMCMCtree("")
 
 MCMC.tree.plot(dated.tree,
                cex.tips = 0.3, 
